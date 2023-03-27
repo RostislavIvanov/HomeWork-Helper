@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800&display=swap"); /*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  height: 100%;
+  font-family: "Montserrat";
+  font-size: 26px;
+  color: black;
+  background-color: #DFE8F2;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 1440px;
+  background-color: #E8F1FC;
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: 20px 20px 30px 5px rgb(203, 218, 228), -5px -5px 30px 0px #FCFCFC;
+}
+
+.header {
+  margin-top: 30px;
+  font-size: 66px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.uncompleted-tasks {
+  flex: 1 1 auto;
+  margin-top: 30px;
+}
+.uncompleted-tasks .uncompleted-tasks__row {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task {
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #F7F7F7;
+  box-shadow: 20px 20px 30px 5px rgb(203, 218, 228), -5px -5px 30px 0px #FCFCFC;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task span {
+  font-weight: 300;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form label input {
+  opacity: 0;
+  display: none;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form label {
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border: solid 1px #F7F7F7;
+  box-shadow: 5px 5px 15px -5px rgba(34, 60, 80, 0.53), -36px -36px 31px -25px rgba(255, 255, 255, 0.51);
+  transition-property: box-shadow, border;
+  transition-delay: 0s, 0.3s;
+  transition-duration: 0.5s, 0.3s;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form label:hover {
+  box-shadow: none;
+  border: solid 1px #BFCCDE;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form button {
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #454545;
+  color: white;
+  width: 200px;
+  font-size: 26px;
+  box-shadow: 5px 5px 15px -5px rgb(34, 60, 80) inset, -36px -36px 31px -25px rgba(255, 255, 255, 0.3) inset;
+}
+.uncompleted-tasks .uncompleted-tasks__row .uncompleted-task .uncompleted-task__button form button:hover {
+  box-shadow: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #000;
+}
+.footer .footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1420px;
+  margin: 0 auto;
+}
+.footer .footer__logo {
+  max-width: 60px;
+}
+.footer .footer__logo img {
+  width: 100%;
+}
+.footer .footer__rights {
+  color: white;
+}
+.footer .footer__info {
+  color: #fff;
+}
+.footer .footer__info li {
+  line-height: 1.5;
+  font-size: 12px;
+}
